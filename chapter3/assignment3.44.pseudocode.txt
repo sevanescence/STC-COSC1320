@@ -1,0 +1,19 @@
+sides <- [0, 0, 0]
+
+P(x) <- { 1 if   0 >= x
+          0 else        }
+C(vec: type of vector) <- {
+    for each element N of vec:
+        B <- P(N)
+        if B is 1: return 1
+    return 0
+}
+
+while C(sides) is 1:
+    sides <- [input(): int for sides]
+
+using a, b, c for sides
+if a^2 + b^2 is c^2:
+    shape is a right triangle
+else:
+    shape is not a right triangle

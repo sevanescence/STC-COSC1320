@@ -1,0 +1,12 @@
+count <- 0
+totalUsage <- 0.00
+
+while program accepts input:
+    milesInTank <- input(): float
+    gallonsInTank <- input(): float
+    usage <- milesInTank / gallonsInTank
+    output("Usage this time: %usage% miles per gallon.")
+    totalUsage <- totalUsage + usage
+    count <- count + 1
+
+output("Average usage: %totalUsage / count% miles per gallon.")
