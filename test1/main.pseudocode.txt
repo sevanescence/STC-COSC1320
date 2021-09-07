@@ -1,0 +1,20 @@
+define date using (day: int, month: int, year: int)
+
+now: date <- [input(): int for date]
+birthdate: date <- [input(): int for date]
+
+date_delta: date <- (total days of birthdate) - (total days of now)
+
+year <- date_delta.year
+if year is less than 18:
+    output("YOU ARE LESS THAN 18 YEARS OF AGE.")
+else if year is between 18 and 25 (inclusive):
+    output("YOU ARE BETWEEN 18 AND 25 YEARS OF AGE.")
+else:
+    output("YOUR AGE EXCEEDS 25 YEARS.")
+
+using (day, month) in date;
+if now equals birthdate:
+    output("TODAY MARKS 365 DAYS SINCE YOUR LAST BIRTH DATE EPOCH.")
+else:
+    output("YOU ARE UNBORN.")
